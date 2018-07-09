@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TvAppSample</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="the_quint_videos">TheQuint videos</string>
+    <string name="collection_name">dummy Collection</string>
+    <string name="collection_description">dummy description</string>
+    <string name="collection_image_url">https://goo.gl/images/o9yqxv</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_error">ErrorActivity</string>
+    <string name="error_screen">Error Screen</string>
+
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_inaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="oops">Oops</string>
+    <string name="play">PLAY</string>
+    <string name="collection">COLLECTION</string>
+</resources>
