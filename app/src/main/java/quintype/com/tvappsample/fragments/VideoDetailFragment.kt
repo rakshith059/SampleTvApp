@@ -7,9 +7,11 @@ import android.support.v17.leanback.app.VideoSupportFragmentGlueHost
 import android.support.v17.leanback.media.MediaPlayerAdapter
 import android.support.v17.leanback.media.PlaybackTransportControlGlue
 import android.support.v17.leanback.widget.PlaybackControlsRow
+import android.support.v4.content.FileProvider
 import quintype.com.tvappsample.activities.DetailActivity
 import quintype.com.tvappsample.models.CollectionModel
 import quintype.com.tvappsample.utils.Constants
+import java.io.File
 
 /**
  * Created TvAppSample by rakshith on 7/9/18.
@@ -34,7 +36,10 @@ class VideoDetailFragment : VideoSupportFragment() {
         mTransportControlGlue.subtitle = mSelectedCollection.mCollectionDescription
         mTransportControlGlue.playWhenPrepared()
 
+//        var sharedFileUri: Uri = FileProvider.getUriForFile(this, "https://www.youtube.com", mSelectedCollection.mCollectionVideoUrl);
+
         playerAdapter.setDataSource(Uri.parse(mSelectedCollection.mCollectionVideoUrl))
+//        playerAdapter.setDataSource(Uri.fromFile(File(mSelectedCollection.mCollectionVideoUrl)))
     }
 
     override fun onPause() {
